@@ -1,0 +1,136 @@
+{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    line-height: 1.5;
+}
+
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    font-weight: 500;
+    padding: auto;
+    text-align: center;
+}
+
+
+.logo {
+  position: absolute;
+  right: 5%;
+  width: 80px;
+  height: auto;
+  transform-style: preserve-3d;
+  animation: girar 4s linear 1;
+  filter: brightness(0) invert(1); 
+}
+
+@keyframes girar {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+nav {
+    background-color: white;
+    padding: 10px;
+}
+
+main {
+    padding: 10px 150px 10px 10px;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgb(red, green, blue);
+}
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+h1 {
+   margin-bottom: 15px;
+   font-weight: 300;
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+p {
+    margin-bottom: 10px;
+}
+
+.texto-con-imagen {
+  position: relative;      
+  padding-right: 200px;      
+  min-height: 100px;      
+}
+
+.imagen_lateral {
+  position: absolute;
+  right: 5%;                
+  top: 50%;                
+  transform: translateY(-20%); 
+  max-width: 230px;
+  height: auto;
+}
+
+.imagen_lateral img {
+  max-width: 100%;
+  height: auto;
+}
+
+.imagen_lateral figcaption {
+  font-size: 15px;
+  color: #333;
+  text-align: center;
+  margin:auto;
+}
+
+
+nav a:hover {
+    color: black;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: 0.3s
+}
+
+.btn-subir {
+  position: fixed;         
+  bottom: 20px;            
+  right: 20px;             
+  width: 45px;
+  height: 45px;
+  background-color: blue;  
+  color: white;            
+  border-radius: 50%;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 24px;         
+  box-shadow: 0 2px 6px darkblue(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+  z-index: 1000;           
+}
+
+.btn-subir:hover {
+  background-color: darkblue;
+}
